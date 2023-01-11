@@ -4,6 +4,7 @@ lmecca@london.edu
 Replicate the results of Bansal, Yaron (2004) using value function iteration (VFI)
 2 state variables version
 November 2022
+Written and tested in julia 1.8
 """
 
 using Distributions, Statistics, DataFrames, Plots, StatsBase, Random
@@ -56,6 +57,7 @@ brns=100000 #burn-in period
 #################################################################
 ######################### PREPARATION ###########################
 #################################################################
+
 #Simulate T values for the long run growth
 Random.seed!(1234)
 x_shocks=rand(Normal(), T) #draw standard Normally distributed shocks

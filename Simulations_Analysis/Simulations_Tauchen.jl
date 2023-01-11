@@ -11,7 +11,7 @@ include("Generic.jl")
 using CSV
 
 #Folder where the .jl fles replicating the model are stored
-path="C:/Users/lmecca/OneDrive - London Business School/Research/Replications/BY"
+path="..."
 
 ################################################################
 ########################## PARAMETERS ##########################
@@ -90,7 +90,7 @@ for k in 1:K
         print("Simulation number " * string(k) *".\n")
     end
     
-    Random.seed!(1234)
+    Random.seed!(1233+k)
     x_shocks=rand(Normal(), (yrs+yrs_brn)*12+1) #draw standard Normally distributed shocks
     σ_shocks=rand(Normal(), (yrs+yrs_brn)*12+1)
     c_shocks=rand(Normal(), (yrs+yrs_brn)*12+1)

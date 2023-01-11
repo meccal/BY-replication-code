@@ -4,6 +4,7 @@ lmecca@london.edu
 Replicate the results of Bansal, Yaron (2004) using the Projection method with Chebyshev polynomials (Collocation method)
 1 state variable version
 October 2022
+Written and tested in julia 1.8
 """
 
 using Distributions, Statistics, DataFrames, Plots, StatsBase, NLsolve, Interpolations, Random

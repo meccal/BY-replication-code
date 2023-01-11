@@ -4,6 +4,7 @@ lmecca@london.edu
 Replicate the results of Bansal, Yaron (2004) using value function iteration (VFI)
 2 state variables version
 September 2022
+Written and tested in julia 1.8
 """
 
 using Distributions, Statistics, DataFrames, Plots, StatsBase, Interpolations
